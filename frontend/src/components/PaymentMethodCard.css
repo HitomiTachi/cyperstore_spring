@@ -1,0 +1,126 @@
+.payment-method-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  border: 2px solid #e5e5e5;
+  border-radius: 8px;
+  background: #fff;
+  transition: all 0.2s;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.payment-method-card:last-child {
+  margin-bottom: 0;
+}
+
+.payment-method-card:hover {
+  border-color: #ccc;
+}
+
+.payment-method-card.selected {
+  border-color: #000;
+  background: #f9f9f9;
+}
+
+.method-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  min-width: 0;
+}
+
+.radio-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.radio-container input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-checkmark {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background: #fff;
+  transition: all 0.2s;
+}
+
+.radio-container input[type="radio"]:checked ~ .radio-checkmark {
+  border-color: #000;
+  background: #000;
+}
+
+.radio-container input[type="radio"]:checked ~ .radio-checkmark::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.method-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.method-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.method-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 4px;
+}
+
+.method-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.method-expiry {
+  font-size: 16px;
+  color: #666;
+}
+
+.method-cardholder {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .payment-method-card {
+    padding: 16px;
+  }
+  
+  .method-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
+

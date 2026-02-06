@@ -1,0 +1,19 @@
+# <type>: <subject>
+#
+# <body>
+#
+# <footer>
+#
+# Types: feat, fix, refactor, docs, style, test, chore, perf, ci, build
+# Subject: Tối đa 50 ký tự, viết bằng tiếng Anh, imperative mood
+# Body: Giải thích "what" và "why" (tùy chọn)
+# Footer: Breaking changes, issue references (tùy chọn)
+#
+# Ví dụ:
+# feat: add product comparison feature
+#
+# Implement product comparison functionality allowing users to
+# compare up to 4 products side by side with detailed specs.
+#
+# Closes #42
+

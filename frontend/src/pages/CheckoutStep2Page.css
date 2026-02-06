@@ -1,0 +1,106 @@
+.checkout-step2-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.checkout-content {
+  width: 100%;
+  padding: 48px 0 80px;
+  background: #fff;
+}
+
+.checkout-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 160px;
+}
+
+.checkout-section {
+  margin-bottom: 64px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 32px 0;
+}
+
+.shipping-methods-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  padding-top: 32px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.back-button {
+  padding: 0 32px;
+  height: 64px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  color: #000;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.back-button:hover {
+  border-color: #000;
+  background: #f5f5f5;
+}
+
+.continue-button {
+  padding: 0 32px;
+  height: 64px;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.continue-button:hover {
+  background: #333;
+}
+
+@media (max-width: 1200px) {
+  .checkout-container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkout-content {
+    padding: 32px 0 40px;
+  }
+  
+  .checkout-container {
+    padding: 0 20px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+  }
+  
+  .checkout-actions {
+    flex-direction: column-reverse;
+  }
+  
+  .back-button,
+  .continue-button {
+    width: 100%;
+  }
+}
+

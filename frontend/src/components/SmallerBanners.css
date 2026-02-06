@@ -1,0 +1,177 @@
+.smaller-banners {
+  width: 100%;
+  padding: 0;
+  background: #fff;
+}
+
+.banners-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  gap: 0;
+}
+
+.left-banners {
+  width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.wide-square {
+  width: 100%;
+  height: 328px;
+}
+
+.squares {
+  display: flex;
+  gap: 0;
+  height: 272px;
+}
+
+.square-banner {
+  width: 360px;
+  height: 272px;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.big-banner {
+  width: 720px;
+  height: 600px;
+  border-radius: 8px;
+  padding: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.playstation {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+}
+
+.airpods {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: #fff;
+}
+
+.vision {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: #fff;
+}
+
+.macbook {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: #fff;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-card-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.banner-card-text {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.5;
+  max-width: 338px;
+}
+
+.banner-button {
+  width: 191px;
+  height: 56px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 24px;
+}
+
+.banner-button:hover {
+  background: #333;
+}
+
+.macbook-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 292px;
+  height: 502px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+@media (max-width: 1440px) {
+  .banners-container {
+    flex-direction: column;
+  }
+  
+  .left-banners {
+    width: 100%;
+  }
+  
+  .big-banner {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .squares {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .square-banner {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .wide-square {
+    height: 250px;
+  }
+  
+  .big-banner {
+    height: 300px;
+  }
+  
+  .macbook-image {
+    display: none;
+  }
+}
+

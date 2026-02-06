@@ -1,0 +1,89 @@
+.summer-sale-banner {
+  width: 100%;
+  height: 448px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 160px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content {
+  text-align: center;
+  max-width: 553px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.banner-title {
+  font-size: 72px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.banner-description {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.banner-button {
+  width: 191px;
+  height: 56px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.banner-button:hover {
+  background: #333;
+}
+
+@media (max-width: 1200px) {
+  .banner-container {
+    padding: 0 40px;
+  }
+  
+  .banner-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .summer-sale-banner {
+    height: 300px;
+  }
+  
+  .banner-container {
+    padding: 0 20px;
+  }
+  
+  .banner-title {
+    font-size: 36px;
+  }
+  
+  .banner-description {
+    font-size: 16px;
+  }
+}
+
